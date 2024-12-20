@@ -1,13 +1,12 @@
 # Performance-Preserving-Optimization-of-Diffusion-Networks
 
 ## Project Description
-The main goal of the project is to explore and implement various methods to optimize the training of diffusion networks while preserving performance, using PyTorch Profiling tools. We used the CIFAR-10 dataset for our experiments, which was downloaded from Kaggle and converted to a folder set using the `cifar10loader.py` script.
+The main goal of the project is to explore and implement various methods to optimize the training of diffusion networks while preserving performance, using PyTorch Profiling tools. We used the CIFAR-10 dataset for our experiments, which was downloaded from Kaggle and converted to a folder set using the `cifar-10` script.
 
 ## Repository Structure
 
 Performance-Preserving-Optimization-of-Diffusion-Networks/ 
 ├── README.md # Project description file 
-├── cifar10loader.py # Data loading script 
 ├── denoising_diffusion_pytorch.py # Diffusion model implementation 
 ├── denoising_diffusion_pytorch_with_profile.py # Diffusion model implementation with torch profile
 ├── try_pytorch_profile.py # Script for performance analysis using PyTorch Profiler 
