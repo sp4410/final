@@ -5,7 +5,7 @@ from denoising_diffusion_pytorch import Unet, GaussianDiffusion, Trainer
 from torch.profiler import profile, ProfilerActivity
 import matplotlib.pyplot as plt
 
-# 定义一个函数来运行训练并记录时间
+# Define a function to run training and record runtime
 def run_training(device, batch_size, amp, num_workers,device_info):
     device = torch.device(device)
     model = Unet(
@@ -43,7 +43,7 @@ def run_training(device, batch_size, amp, num_workers,device_info):
     print(f"Total runtime on {device} with batch size {batch_size}, AMP {'enabled' if amp else 'disabled'}, num_workers {num_workers}: {total_runtime} seconds")
     return total_runtime
 
-# 运行训练并记录时间
+# Run training and record runtime
 batch_size = 128
 devices = ['cuda:0', 'cuda:0,1']
 amp_settings = [False, True]
@@ -62,7 +62,7 @@ for device in devices:
             results[f"{device}_amp_{amp}"].append(runtime * 5 * 60)
 
 print(results)
-# 绘制折线图
+# Plot the line chart
 plt.figure(figsize=(12, 6))
 for key in results:
     plt.plot(num_workers_list, results[key], label=key)
