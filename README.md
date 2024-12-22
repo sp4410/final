@@ -35,7 +35,7 @@ The main goal of the project is to explore and implement various methods to opti
 ### Performance Analysis
 To perform performance analysis using PyTorch Profiler:
 ```
-python [try_pytorch_profile.py]
+python try_pytorch_profile.py
 ```
 Multi-GPU Training
 To train on single GPU and multiple GPUs:
