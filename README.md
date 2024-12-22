@@ -15,15 +15,7 @@ The main goal of the project is to explore and implement various methods to opti
 ├── try_amp.py # AMP (Automatic Mixed Precision) training script
 ├── try_torch_compile.py # Script for training with torch.compile 
 
-## Data Preparation
-Download [cifar-10](https://www.kaggle.com/c/cifar-10/) and decompress train.7z. The direcotry structure is as below:
-
-cifar-10/
-|── train
-    |──1.png
-    |──2.png
-    |──....
-
+（Data Preparation）
 （the cifar-10 dataset is too large, it can only run on the desktop, sorry）
 
 ## Execute 
