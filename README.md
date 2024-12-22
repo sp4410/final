@@ -6,14 +6,24 @@ The main goal of the project is to explore and implement various methods to opti
 ## Repository Structure
 
 ├── image_output/ # Folder to store results 
+
 ├── trace_output/ # Folder to store Chrome trace files 
-|── cifar-10/ # CIFAR-10 datasetPerformance-Preserving-Optimization-of-Diffusion-Networks/ ├── README.md # Project description file 
-├── denoising_diffusion_pytorch.py # Diffusion model implementation 
-├── denoising_diffusion_pytorch_with_profile.py # Diffusion model implementation with torch profile
-├── try_pytorch_profile.py # Script for performance analysis using PyTorch Profiler 
-├── try_mulit_gpu.py # Multi-GPU training script 
-├── try_amp.py # AMP (Automatic Mixed Precision) training script
-├── try_torch_compile.py # Script for training with torch.compile 
+
+|── cifar-10/ # CIFAR-10 datasetPerformance-Preserving-Optimization-of-Diffusion-Networks
+
+├── README.md / # Project description file 
+
+├── denoising_diffusion_pytorch.py / # Diffusion model implementation 
+
+├── denoising_diffusion_pytorch_with_profile.py / # Diffusion model implementation with torch profile
+
+├── try_pytorch_profile.py / # Script for performance analysis using PyTorch Profiler 
+
+├── try_mulit_gpu.py / # Multi-GPU training script 
+
+├── try_amp.py / # AMP (Automatic Mixed Precision) training script
+
+├── try_torch_compile.py / # Script for training with torch.compile 
 
 ## Data Preparation
 
@@ -40,11 +50,10 @@ cifar-10/
 
 
 
-把github的文件保存到桌面的一个文件夹final
+Save GitHub files to a folder on the desktop called final
+After placing CIFAR-10 on the desktop, modify the code
 
-把cifar-10放到桌面后，修改代码
 change every code“c/Users/ThinkPad/Desktop/cifar-10”
-
 into“……your_file……/Desktop/cifar-10”
 
 cd “……your_file……/Desktop/cifar-10"
@@ -80,7 +89,7 @@ python try_amp.py
 Training with torch.compile
 To train with and without torch.compile:
 
-安装 PyTorch和triton后
+install PyTorch和triton
 
 ```
 python try_torch_compile.py
