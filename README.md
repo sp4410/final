@@ -39,6 +39,7 @@ Please refer to the attach file on the homework page: Final Project Github Repos
 Download [cifar-10](https://www.kaggle.com/c/cifar-10/) and decompress train.7z. The direcotry structure is as below:
 
 cifar-10/
+
 |── train
 
 ​    |──1.png
