@@ -25,10 +25,12 @@ The main goal of the project is to explore and implement various methods to opti
 
 ├── try_torch_compile.py / # Script for training with torch.compile 
 
+
+
+## Execute 
 （Data Preparation）
 （the cifar-10 dataset is too large, it can only run on the desktop, sorry）
 
-## Execute 
 
 ### Performance Analysis
 To perform performance analysis using PyTorch Profiler:
