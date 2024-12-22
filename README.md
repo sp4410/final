@@ -6,14 +6,24 @@ The main goal of the project is to explore and implement various methods to opti
 ## Repository Structure
 
 ├── image_output/ # Folder to store results 
+
 ├── trace_output/ # Folder to store Chrome trace files 
-|── cifar-10/ # CIFAR-10 datasetPerformance-Preserving-Optimization-of-Diffusion-Networks/ ├── README.md # Project description file 
-├── denoising_diffusion_pytorch.py # Diffusion model implementation 
-├── denoising_diffusion_pytorch_with_profile.py # Diffusion model implementation with torch profile
-├── try_pytorch_profile.py # Script for performance analysis using PyTorch Profiler 
-├── try_mulit_gpu.py # Multi-GPU training script 
-├── try_amp.py # AMP (Automatic Mixed Precision) training script
-├── try_torch_compile.py # Script for training with torch.compile 
+
+|── cifar-10/ # CIFAR-10 datasetPerformance-Preserving-Optimization-of-Diffusion-Networks
+
+├── README.md / # Project description file 
+
+├── denoising_diffusion_pytorch.py / # Diffusion model implementation 
+
+├── denoising_diffusion_pytorch_with_profile.py / # Diffusion model implementation with torch profile
+
+├── try_pytorch_profile.py / # Script for performance analysis using PyTorch Profiler 
+
+├── try_mulit_gpu.py / # Multi-GPU training script 
+
+├── try_amp.py / # AMP (Automatic Mixed Precision) training script
+
+├── try_torch_compile.py / # Script for training with torch.compile 
 
 （Data Preparation）
 （the cifar-10 dataset is too large, it can only run on the desktop, sorry）
