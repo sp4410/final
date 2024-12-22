@@ -6,54 +6,110 @@ The main goal of the project is to explore and implement various methods to opti
 ## Repository Structure
 
 ├── image_output/ # Folder to store results 
-
 ├── trace_output/ # Folder to store Chrome trace files 
+|── cifar-10/ # CIFAR-10 datasetPerformance-Preserving-Optimization-of-Diffusion-Networks/ ├── README.md # Project description file 
+├── denoising_diffusion_pytorch.py # Diffusion model implementation 
+├── denoising_diffusion_pytorch_with_profile.py # Diffusion model implementation with torch profile
+├── try_pytorch_profile.py # Script for performance analysis using PyTorch Profiler 
+├── try_mulit_gpu.py # Multi-GPU training script 
+├── try_amp.py # AMP (Automatic Mixed Precision) training script
+├── try_torch_compile.py # Script for training with torch.compile 
 
-|── cifar-10/ # CIFAR-10 datasetPerformance-Preserving-Optimization-of-Diffusion-Networks
-
-├── README.md / # Project description file 
-
-├── denoising_diffusion_pytorch.py / # Diffusion model implementation 
-
-├── denoising_diffusion_pytorch_with_profile.py / # Diffusion model implementation with torch profile
-
-├── try_pytorch_profile.py / # Script for performance analysis using PyTorch Profiler 
-
-├── try_mulit_gpu.py / # Multi-GPU training script 
-
-├── try_amp.py / # AMP (Automatic Mixed Precision) training script
-
-├── try_torch_compile.py / # Script for training with torch.compile 
-
+## Data Preparation
 
 
 ## Execute 
-（Data Preparation）
-（the cifar-10 dataset is too large, it can only run on the desktop, sorry）
-
 
 ### Performance Analysis
-To perform performance analysis using PyTorch Profiler:
+
+##### cifar-10
+
+（the cifar-10 dataset is too large, it can only run on the desktop, sorry
+
+Please refer to the attach file on the homework page: Final Project Github Repository>cifar-10.zip）
+
+Download [cifar-10](https://www.kaggle.com/c/cifar-10/) and decompress train.7z. The direcotry structure is as below:
+
+cifar-10/
+|── train
+    |──1.png
+    |──2.png
+    |──....
+
+
+
+
+
+把github的文件保存到桌面的一个文件夹final
+
+把cifar-10放到桌面后，修改代码
+change every code“c/Users/ThinkPad/Desktop/cifar-10”
+
+into“……your_file……/Desktop/cifar-10”
+
+cd “……your_file……/Desktop/cifar-10"
+
+ run `pip install -r requirements.txt`.
+
+
+
+then
+
+（1）To perform performance analysis using PyTorch Profiler:
 ```
 python try_pytorch_profile.py
 ```
-Multi-GPU Training
+（2）Multi-GPU Training
 To train on single GPU and multiple GPUs:
+
 ```
 python try_mulit_gpu.py
 ```
 
-AMP Training
+（3）AMP Training
 To train with and without AMP:
+
 ```
 python try_amp.py
 ```
 
+
+
+##### About：
+
 Training with torch.compile
 To train with and without torch.compile:
+
+安装 PyTorch和triton后
+
 ```
 python try_torch_compile.py
 ```
+
+
+
+（Running on Ubuntu）cd"/mnt/……your_file……/Desktop/final">python try_torch_compile.py
+
+（ install pytorch）
+
+pip install -U triton
+sudo apt update && sudo apt upgrade -y
+sudo apt install python3-pip python3-venv -y
+pip install torchvision
+pip install matplotlib
+
+pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+
+
+（install triton）
+
+source /root/triton_env/bin/activate
+
+which python
+
+pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu113
+
+
 
 ## Results
 ### Performance Analysis Results
